@@ -15,5 +15,7 @@ for i in range(n):
 
 print("\nРАМКА {0}*{1}:".format(n, m))
 for i in range(n):
-    for j in range(m):
-        pass
+    if i == 0 or i == n - 1:
+        print("#" * m)
+    else:
+        print("#" + " " * (m - 2) + "#")
